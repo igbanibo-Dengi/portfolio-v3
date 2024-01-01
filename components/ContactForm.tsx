@@ -7,7 +7,7 @@ export default function ContactForm() {
   return (
     <div className="h-full w-full flex">
       <div className="my-auto w-full flex flex-col gap-4">
-        <h2 className="text-4xl text-center mb-5 underline">Get In Touch</h2>
+        <h2 className="text-2xl text-center mb-5 underline">Get In Touch</h2>
         <div className="grid grid-cols-2 gap-4">
           <div>
             <Label htmlFor="first-name">First name</Label>
@@ -25,7 +25,7 @@ export default function ContactForm() {
         <div>
           <Label htmlFor="message">Message</Label>
           <Textarea
-            className="min-h-[100px]"
+            className="min-h-[100px] max-h-[250px]"
             id="message"
             placeholder="Enter your message"
           />
