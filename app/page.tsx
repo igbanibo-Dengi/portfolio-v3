@@ -5,20 +5,23 @@ import { Github, Linkedin, Twitter } from "lucide-react";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
     <main className="flex justify-center items-center h-screen w-screen sm:p-10 p-2">
-      <div className="border border-gray-500 h-full  w-full flex flex-col p-4">
+      <div className="border rounded-md border-gray-500 h-full  w-full flex flex-col p-4 sm:p-10">
         <span className=" sm:hidden mb-6">
-          <h1 className=" text-2xl pb-2">Igbanibo Dengi</h1>
+          <h1 className="text-2xl pb-2">Igbanibo Dengi</h1>
           <h3>Front End Developer</h3>
         </span>
         <Tabs defaultValue="home" className="flex h-full w-full">
-          <div className="w-[20%] mt-10 h-full flex justify-between flex-col gap-5">
+          <div className="w-[20%] sm:w-[40%] h-full flex justify-between flex-col gap-5">
             <div>
               <span className="hidden sm:block mb-5">
-                <h1 className=" text-4xl pb-2">Igbanibo Dengi</h1>
+                <h1 className=" text-4xl pb-2 whitespace-nowrap">
+                  Igbanibo Dengi
+                </h1>
                 <h3>Front End Developer</h3>
               </span>
 
@@ -58,10 +61,10 @@ export default function Home() {
               <ModeToggle />
             </div>
           </div>
-          <div className="w-[80%] h-full mt-10">
+          <div className="w-[80%] sm:w-[60%] h-full">
             <TabsContent value="home">
-              <div className="flex flex-col gap-8 items-end sm:items-center sm:justify-center h-full w-full">
-                <p className="w-[280px] hidden sm:block text-sm sm:font-semibold">
+              <div className="flex flex-col justify-between  items-end sm:items-center h-full w-full">
+                <p className="w-[280px] hidden sm:block text-sm sm:text-base sm:font-semibold ">
                   Hi, I'm a front end focused web developer based in Nigeria. I
                   thrive on the art of creating captivating, scalable, and
                   responsive web designs.My journey is marked by a proven track
@@ -69,17 +72,19 @@ export default function Home() {
                   collaborative projects. I bring not just technical expertise
                   but also a unique blend of creativity and adaptability to
                   every web development endeavor. Dive into my portfolio, and
-                  let's embark on a journey where innovation meets functionality
+                  let's embark on a journey where innovation meets
+                  functionality.
                 </p>
-                <p className="w-[200px] sm:hidden text-sm sm:font-semibold">
+                <p className="w-[200px] sm:hidden text-sm sm:font-semibold pt-20 max-[400px]:pt-0">
                   Hi, I'm a front end focused web developer based in Nigeria. I
                   thrive on the art of creating captivating, scalable, and
                   responsive web designs. I bring not just technical expertise
                   but also a unique blend of creativity and adaptability to
                   every web development endeavor. Dive into my portfolio, and
-                  let's embark on a journey where innovation meets functionality
+                  let's embark on a journey where innovation meets
+                  functionality.
                 </p>
-                <div className="flex flex-wrap gap-2 w-full justify-center items-center">
+                <div className="flex flex-wrap gap-2  justify-center items-center w-full sm:w-full max-[320px]:hidden">
                   <Badge>HTML</Badge>
                   <Badge>CSS</Badge>
                   <Badge>JavaScript</Badge>
@@ -91,7 +96,9 @@ export default function Home() {
                 </div>
               </div>
             </TabsContent>
-            <TabsContent value="projects">Projects.</TabsContent>
+            <TabsContent value="projects">
+              <Projects />
+            </TabsContent>
             <TabsContent value="resume">Resume.</TabsContent>
             <TabsContent value="contact-large">
               <ContactForm />
