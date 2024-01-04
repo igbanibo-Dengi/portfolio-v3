@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 // import { Courier_Prime } from "next/font/google";
-import { Inter } from "next/font/google";
+import { DM_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider/Theme-Provider";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], weight: "400" });
+const dM_Mono = DM_Mono({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={dM_Mono.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

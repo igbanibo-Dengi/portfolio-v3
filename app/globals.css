@@ -87,18 +87,25 @@
   }
 }
 
-/* @keyframes marquee {
+/* Define the animation */
+@keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateY(100%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateY(-100%);
   }
-} */
+}
 
-/* Apply the animation to the marquee container
+/* Apply the animation to the marquee container */
 .marquee {
-  display: inline-block;
   white-space: nowrap;
-  animation: marquee 20s linear infinite; 
-} */
+  animation: marquee 40s linear infinite; /* Adjust the duration as needed */
+}
+
+.marquee p {
+  margin: 20px 0;
+
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}

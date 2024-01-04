@@ -1,4 +1,4 @@
-import { ArrowUpRight, Github, Info } from "lucide-react";
+import { ArrowUpRight, ExternalLink, Github, Info } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -25,9 +25,7 @@ const Projects = () => {
                 className="hover:text-muted-foreground hover:bg-muted rounded-md p-2"
               >
                 <span className="flex items-center justify-between">
-                  <p className="font-semibold text-base sm:text-2xl">
-                    {project.title}.
-                  </p>
+                  <p className=" text-base sm:text-2xl">{project.title}.</p>
                   <span className="flex gap-2 items-center">
                     <Dialog>
                       <DialogTrigger>
@@ -55,7 +53,7 @@ const Projects = () => {
                       <Github className="hover:text-primary hidden sm:block" />
                     </Link>
                     <Link href={project.demo}>
-                      <ArrowUpRight className="hover:text-primary hidden sm:block" />
+                      <ExternalLink className="hover:text-primary hidden sm:block" />
                     </Link>
                   </span>
                 </span>
