@@ -97,10 +97,10 @@
   }
 }
 
-/* Apply the animation to the marquee container */
+/* Apply animation to marquee container */
 .marquee {
   white-space: nowrap;
-  animation: marquee 40s linear infinite; /* Adjust the duration as needed */
+  animation: marquee 40s linear infinite;
 }
 
 .marquee p {
@@ -109,3 +109,26 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
+
+/* Define the animation */
+@keyframes badges {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Apply animation to badges container */
+.badges {
+  white-space: nowrap;
+  animation: badges 40s linear infinite;
+}
+
+/* .marquee p {
+  margin: 20px 0;
+
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+} */

@@ -91,6 +91,7 @@ export default function Home() {
                     let's embark on a journey where innovation meets
                     functionality.
                   </p>
+
                   <div className="hidden  sm:flex justify-center gap-2 items-center overflow-hidden">
                     <div className="marquee">
                       <p>HTML</p>
