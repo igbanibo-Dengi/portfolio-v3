@@ -9,31 +9,27 @@ import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center h-screen w-screen sm:p-10 p-2">
-      <div className="border rounded-md border-gray-500 h-full  w-full flex flex-col p-4 sm:p-10">
-        <span className=" sm:hidden mb-6">
-          <h1 className="text-2xl pb-2">Igbanibo Dengi</h1>
-          <h3>Front End Developer</h3>
-        </span>
-        <Tabs defaultValue="home" className="flex h-full w-full">
-          <div className="w-[20%] sm:w-[40%] h-full flex justify-between flex-col gap-5">
-            <div>
-              <span className="hidden sm:block mb-5">
-                <h1 className=" text-4xl pb-2 whitespace-nowrap">
+    <main className=" h-screen w-screen sm:p-10 p-2 overflow-hidden  no-scrollbar">
+      <div className="border rounded-md border-gray-500 h-full  w-full flex flex-col p-4 sm:p-10 overflow-auto ">
+        <Tabs defaultValue="home" className="relative h-full">
+          <div className="fixed flex justify-between flex-col w-[100px] h-[85vh] xl:h-[80vh]">
+            <div className="flex flex-col gap-10">
+              <span>
+                <h1 className=" text-xl md:text-4xl pb-2 whitespace-nowrap">
                   Igbanibo Dengi
                 </h1>
-                <h3>Front End Developer</h3>
+                <h3 className="whitespace-nowrap">Front End Developer</h3>
               </span>
 
               <TabsList>
                 <TabsTrigger value="home">Home</TabsTrigger>
                 <TabsTrigger value="projects">Projects</TabsTrigger>
                 <TabsTrigger value="resume">Resume</TabsTrigger>
-                <TabsTrigger value="contact-large" className="hidden lg:block">
+                <TabsTrigger value="contact-large" className="hidden xl:block">
                   Contact
                 </TabsTrigger>
-                {/* ==================================DRAWER =====================================================================*/}
-                <div className="lg:hidden">
+                {/* ==================================DRAWER =======================================*/}
+                <div className="xl:hidden">
                   <Drawer>
                     <DrawerTrigger className="text-muted-foreground">
                       Contact
@@ -48,22 +44,31 @@ export default function Home() {
               </TabsList>
             </div>
 
-            <div className="flex flex-col gap-3 mb-10">
-              <Link href="/">
+            <div className="flex flex-col gap-3">
+              <Link
+                href="/"
+                className="hover:text-primary w-fit hover:animate-pulse"
+              >
                 <Linkedin />
               </Link>
-              <Link href="/">
+              <Link
+                href="/"
+                className="hover:text-primary w-fit hover:animate-pulse"
+              >
                 <Twitter />
               </Link>
-              <Link href="/">
+              <Link
+                href="/"
+                className="hover:text-primary w-fit hover:animate-pulse"
+              >
                 <Github />
               </Link>
               <ModeToggle />
             </div>
           </div>
-          <div className="w-[80%] sm:w-[60%] h-full">
+          <div className="w-full h-full">
             <TabsContent value="home">
-              <div className="flex flex-col justify-between  items-end sm:items-center h-full w-full">
+              <div className="flex flex-col justify-center  items-end sm:items-center h-full w-full">
                 <p className="w-[280px] hidden sm:block text-sm sm:text-base sm:font-semibold ">
                   Hi, I'm a front end focused web developer based in Nigeria. I
                   thrive on the art of creating captivating, scalable, and
@@ -84,19 +89,9 @@ export default function Home() {
                   let's embark on a journey where innovation meets
                   functionality.
                 </p>
-                <div className="flex flex-wrap gap-2  justify-center items-center w-full sm:w-full max-[320px]:hidden">
-                  <Badge>HTML</Badge>
-                  <Badge>CSS</Badge>
-                  <Badge>JavaScript</Badge>
-                  <Badge>Typescript</Badge>
-                  <Badge>React</Badge>
-                  <Badge>Next</Badge>
-                  <Badge>Tailwind</Badge>
-                  <Badge>Git</Badge>
-                </div>
               </div>
             </TabsContent>
-            <TabsContent value="projects">
+            <TabsContent value="projects" className="pt-24 md:pt-36 xl:pt-0">
               <Projects />
             </TabsContent>
             <TabsContent value="resume">Resume.</TabsContent>
@@ -105,6 +100,17 @@ export default function Home() {
             </TabsContent>
           </div>
         </Tabs>
+
+        {/* <div className="flex justify-center gap-2 items-center flex-wrap">
+          <Badge>HTML</Badge>
+          <Badge>CSS</Badge>
+          <Badge>JavaScript</Badge>
+          <Badge>Typescript</Badge>
+          <Badge>React</Badge>
+          <Badge>Next</Badge>
+          <Badge>Tailwind</Badge>
+          <Badge>Git</Badge>
+        </div> */}
       </div>
     </main>
   );
