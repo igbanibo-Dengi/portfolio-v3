@@ -51,7 +51,7 @@ const Projects = () => {
                           {project.details}.
                         </DialogDescription>
                         <div className="block sm:flex justify-between">
-                          <div className="flex gap-3 flex-wrap mb-5">
+                          <div className="flex justify-center gap-3 flex-wrap mb-5">
                             {project.icons.map((icon) => (
                               <Badge className="whitespace-nowrap">
                                 {icon}

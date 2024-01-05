@@ -3,7 +3,6 @@ import ContactForm from "@/components/ContactForm";
 import { ModeToggle } from "@/components/ThemeToggle/ThemeToggle";
 import { Dot, Github, Linkedin, Twitter } from "lucide-react";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
-import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
@@ -71,7 +70,7 @@ export default function Home() {
             <TabsContent value="home">
               <div className="flex flex-col justify-center  items-end h-full">
                 <div className="flex justify-end lg:justify-between w-full max-w-[800px]  overflow-hidden">
-                  <p className="w-[280px] hidden h-fit my-auto sm:block text-sm sm:text-base sm:font-semibold ">
+                  <p className="w-[280px] hidden mx-auto xl:mx-0 h-fit my-auto sm:block text-sm sm:text-base sm:font-semibold ">
                     Hi, I'm a front end focused web developer based in Nigeria.
                     I thrive on the art of creating captivating, scalable, and
                     responsive web designs.My journey is marked by a proven
