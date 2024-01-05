@@ -75,24 +75,24 @@ export default function Home() {
               <div className="flex flex-col justify-center  items-end h-full">
                 <div className="flex justify-end lg:justify-between w-full max-w-[800px]  overflow-hidden pl-20">
                   <p className="w-[280px] hidden mx-auto xl:mx-0 h-fit my-auto sm:block text-sm sm:text-base sm:font-semibold ">
-                    Hi, I'm a front end focused web developer based in Nigeria.
-                    I thrive on the art of creating captivating, scalable, and
-                    responsive web designs.My journey is marked by a proven
-                    track record, demonstrating my prowess in both solo and
-                    collaborative projects. I bring not just technical expertise
-                    but also a unique blend of creativity and adaptability to
-                    every web development endeavor. Dive into my portfolio, and
-                    let's embark on a journey where innovation meets
-                    functionality.
+                    Hi, I&apos;m a front end focused web developer based in
+                    Nigeria. I thrive on the art of creating captivating,
+                    scalable, and responsive web designs.My journey is marked by
+                    a proven track record, demonstrating my prowess in both solo
+                    and collaborative projects. I bring not just technical
+                    expertise but also a unique blend of creativity and
+                    adaptability to every web development endeavor. Dive into my
+                    portfolio, and let&apos;s embark on a journey where
+                    innovation meets functionality.
                   </p>
                   <p className="w-[200px] sm:hidden text-sm sm:font-semibold pt-20 max-[400px]:pt-0">
-                    Hi, I'm a front end focused web developer based in Nigeria.
-                    I thrive on the art of creating captivating, scalable, and
-                    responsive web designs. I bring not just technical expertise
-                    but also a unique blend of creativity and adaptability to
-                    every web development endeavor. Dive into my portfolio, and
-                    let's embark on a journey where innovation meets
-                    functionality.
+                    Hi, I&apos;m a front end focused web developer based in
+                    Nigeria. I thrive on the art of creating captivating,
+                    scalable, and responsive web designs. I bring not just
+                    technical expertise but also a unique blend of creativity
+                    and adaptability to every web development endeavor. Dive
+                    into my portfolio, and let&apos;s embark on a journey where
+                    innovation meets functionality.
                   </p>
 
                   <div className="hidden  sm:flex justify-center gap-2 items-center overflow-hidden">
