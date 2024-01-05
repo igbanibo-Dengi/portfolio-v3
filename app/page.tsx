@@ -69,7 +69,7 @@ export default function Home() {
           <div className="w-full h-full">
             <TabsContent value="home">
               <div className="flex flex-col justify-center  items-end h-full">
-                <div className="flex justify-end lg:justify-between w-full max-w-[800px]  overflow-hidden">
+                <div className="flex justify-end lg:justify-between w-full max-w-[800px]  overflow-hidden pl-20">
                   <p className="w-[280px] hidden mx-auto xl:mx-0 h-fit my-auto sm:block text-sm sm:text-base sm:font-semibold ">
                     Hi, I'm a front end focused web developer based in Nigeria.
                     I thrive on the art of creating captivating, scalable, and

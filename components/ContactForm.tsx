@@ -14,7 +14,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-
+import emailjs from "@emailjs/browser";
 //Form schema
 const formSchema = z.object({
   firstName: z.string().min(2, {
@@ -48,7 +48,15 @@ export default function ContactForm() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
+
     console.log(values);
+
+    emailjs.sendForm(
+      "service_i9u1zy5",
+      "template_5dzpj17",
+      "#my-form",
+      "KBMwY4REo2bDCuKMh"
+    );
   }
   return (
     <div className="h-full w-full flex flex-col px-0 md:px-10 xl:px-0 xl:items-end">
@@ -58,6 +66,7 @@ export default function ContactForm() {
         <form
           onSubmit={form.handleSubmit(onSubmit)}
           className="my-auto w-full flex flex-col gap-4 max-w-[800px] mx-auto xl:mx-0"
+          id="my-form"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <FormField

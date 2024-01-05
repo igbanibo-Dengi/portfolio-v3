@@ -47,7 +47,7 @@ const Projects = () => {
                             className="w-[1000px] h-auto"
                           />
                         </div>
-                        <DialogDescription className="rounded-md my-20">
+                        <DialogDescription className="rounded-md my-5">
                           {project.details}.
                         </DialogDescription>
                         <div className="block sm:flex justify-between">
