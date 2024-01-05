@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { DM_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider/Theme-Provider";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
 const dM_Mono = DM_Mono({ subsets: ["latin"], weight: "400" });
 
@@ -25,7 +26,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <main>
+            {children}
+            <Toaster />
+          </main>
         </ThemeProvider>
       </body>
     </html>

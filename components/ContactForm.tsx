@@ -14,6 +14,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { useToast } from "@/components/ui/use-toast";
+
 import emailjs from "@emailjs/browser";
 //Form schema
 const formSchema = z.object({
@@ -51,13 +53,46 @@ export default function ContactForm() {
 
     console.log(values);
 
-    emailjs.sendForm(
-      "service_i9u1zy5",
-      "template_5dzpj17",
-      "#my-form",
-      "KBMwY4REo2bDCuKMh"
-    );
+    emailjs
+      .sendForm(
+        "service_i9u1zy5",
+        "template_5dzpj17",
+        "#my-form",
+        "KBMwY4REo2bDCuKMh"
+      )
+
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+
+        // Display the toast only when the message is sent successfully.
+        toast({
+          description: "Your message has been sent.",
+        });
+
+        // Reset the form to its default values after a successful submission.
+        form.reset({
+          firstName: "",
+          lastName: "",
+          email: "",
+          message: "",
+        });
+      })
+
+      .catch((error) => {
+        console.error("Error sending email:", error);
+
+        // Handle the error if the message fails to send.
+        // You may want to display an error toast or take other actions.
+        toast({
+          variant: "destructive",
+          title: "Uh oh! Something went wrong.",
+          description: "Your message was not sent.",
+        });
+      });
   }
+
+  const { toast } = useToast();
+
   return (
     <div className="h-full w-full flex flex-col px-0 md:px-10 xl:px-0 xl:items-end">
       <h2 className="text-2xl text-center xl:text-right mb-5">Get In Touch</h2>
