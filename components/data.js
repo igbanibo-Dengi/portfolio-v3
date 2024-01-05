@@ -5,26 +5,26 @@ export const data = [
     title: "Getlinked",
     github: "https://github.com/igbanibo-Dengi/get_linked",
     demo: "https://get-linked-amber.vercel.app/",
-    icons: ["React", "Tailwind CSS", "Framer Motion"],
-    description: "React, Tailwind CSS, and Framer Motion.",
+    icons: ["Next.js", "Tailwind CSS", "ShadCN UI", "Framer Motion"],
+    description: "React, ShadCN UI and Framer Motion.",
     details:
-      "Getlinked is a React project with Tailwind CSS and Framer Motion for smooth animations. It connects people through a sleek user interface.",
+      "Getlinked was built during a hackathon event i participated in, I used Next.js for the frontend framework, Tailwind CSS for styling, ShadCn UI for building the user interface components , and Framer motion for animations",
   },
   {
     id: 2,
-    image: "/images/get-linked.png",
+    image: "/images/Pixel-Host.png",
     title: "PixelHost",
     github: "https://github.com/igbanibo-Dengi/vision",
     demo: "https://pixelhost-three.vercel.app/",
-    icons: ["React", "Tailwind CSS", "Framer Motion"],
+    icons: ["Next.js", "Tailwind CSS", "Framer Motion"],
     description: "Built with Next.js, Tailwind CSS, and Framer.",
     details:
-      "PixelHost, a Next.js app with Tailwind CSS and Framer Motion, offers a visually appealing platform for hosting and showcasing creative projects.",
+      "PixelHost, a Next.js app with Tailwind CSS and Framer Motion, offers a visually appealing UI for hosting services.",
   },
   {
     id: 3,
-    image: "/images/get-linked.png",
-    title: "MCU",
+    image: "/images/MCU.png",
+    title: "MCU Database",
     github: "https://github.com/igbanibo-Dengi/mcu-database",
     demo: "https://marvelcinematicuniversedatabase.netlify.app/",
     icons: ["React", "Tailwind CSS", "HTML"],
@@ -34,11 +34,11 @@ export const data = [
   },
   {
     id: 4,
-    image: "/images/get-linked.png",
+    image: "/images/dipps.png",
     title: "Dipps Beautifyers",
     github: "https://github.com/igbanibo-Dengi/dipps-",
     demo: "https://dipps.netlify.app/",
-    icons: ["React", "Tailwind CSS", "HTML", "Framer Motion"],
+    icons: ["React", "Tailwind CSS", "Framer Motion"],
     description:
       "React, Tailwind CSS, HTML, and Framer Motion for delightful animations.",
     details:
@@ -46,7 +46,7 @@ export const data = [
   },
   {
     id: 5,
-    image: "/images/get-linked.png",
+    image: "/images/nexus.png",
     title: "Nexus Gaming",
     github: "https://github.com/igbanibo-Dengi/nexus-gaming",
     demo: "https://nexusgaming.netlify.app/",

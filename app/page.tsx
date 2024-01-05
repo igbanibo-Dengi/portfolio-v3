@@ -6,6 +6,7 @@ import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import Link from "next/link";
 import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
+import X from "/twitter.svg";
 
 export default function Home() {
   return (
@@ -46,19 +47,22 @@ export default function Home() {
 
             <div className="flex flex-col gap-3">
               <Link
-                href="/"
+                href="https://www.linkedin.com/in/igbaniboalex/"
+                target="_blank"
                 className="hover:text-primary w-fit hover:animate-pulse"
               >
                 <Linkedin />
               </Link>
               <Link
-                href="/"
+                href="https://twitter.com/IgbaniboD"
+                target="_blank"
                 className="hover:text-primary w-fit hover:animate-pulse"
               >
                 <Twitter />
               </Link>
               <Link
-                href="/"
+                href="https://github.com/igbanibo-Dengi"
+                target="_blank"
                 className="hover:text-primary w-fit hover:animate-pulse"
               >
                 <Github />

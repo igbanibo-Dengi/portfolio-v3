@@ -59,20 +59,20 @@ const Projects = () => {
                             ))}
                           </div>
                           <div className="flex gap-3 justify-center">
-                            <Link href={project.github}>
+                            <Link href={project.github} target="_blank">
                               <Github />
                             </Link>
-                            <Link href={project.demo}>
+                            <Link href={project.demo} target="_blank">
                               <ExternalLink />
                             </Link>
                           </div>
                         </div>
                       </DialogContent>
                     </Dialog>
-                    <Link href={project.github}>
+                    <Link href={project.github} target="_blank">
                       <Github className="hover:text-primary hidden sm:block" />
                     </Link>
-                    <Link href={project.demo}>
+                    <Link href={project.demo} target="_blank">
                       <ExternalLink className="hover:text-primary hidden sm:block" />
                     </Link>
                   </span>
