@@ -94,6 +94,7 @@ const Projects = () => {
           <Badge>React</Badge>
           <Badge>Next</Badge>
           <Badge>Tailwind</Badge>
+          <Badge>Redux</Badge>
           <Badge>Git</Badge>
           <Badge>Payload CMS</Badge>
         </div>
