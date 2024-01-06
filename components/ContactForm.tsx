@@ -35,7 +35,6 @@ const formSchema = z.object({
 });
 
 export default function ContactForm() {
-  // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -46,11 +45,7 @@ export default function ContactForm() {
     },
   });
 
-  // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-
     console.log(values);
 
     emailjs
@@ -64,12 +59,10 @@ export default function ContactForm() {
       .then((response) => {
         console.log("Email sent successfully:", response);
 
-        // Display the toast only when the message is sent successfully.
         toast({
           description: "Your message has been sent.",
         });
 
-        // Reset the form to its default values after a successful submission.
         form.reset({
           firstName: "",
           lastName: "",
@@ -80,9 +73,6 @@ export default function ContactForm() {
 
       .catch((error) => {
         console.error("Error sending email:", error);
-
-        // Handle the error if the message fails to send.
-        // You may want to display an error toast or take other actions.
         toast({
           variant: "destructive",
           title: "Uh oh! Something went wrong.",
@@ -155,7 +145,7 @@ export default function ContactForm() {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email</FormLabel>
+                <FormLabel>Message</FormLabel>
                 <FormControl>
                   <Textarea placeholder="Enter your message here" {...field} />
                 </FormControl>
