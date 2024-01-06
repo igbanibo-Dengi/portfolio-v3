@@ -6,7 +6,6 @@ import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import Link from "next/link";
 import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
-import X from "/twitter.svg";
 
 export default function Home() {
   return (
