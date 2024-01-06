@@ -117,7 +117,13 @@ export default function Home() {
                       <p>Tailwind</p>
 
                       <Dot />
+                      <p>Redux</p>
+
+                      <Dot />
                       <p>Git</p>
+
+                      <Dot />
+                      <p>Payload CMS</p>
 
                       <Dot />
                     </div>
