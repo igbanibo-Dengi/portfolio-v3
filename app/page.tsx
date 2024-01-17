@@ -10,7 +10,7 @@ import Resume from "@/components/Resume";
 export default function Home() {
   return (
     <main className=" h-screen w-screen sm:p-10 p-2 overflow-hidden  no-scrollbar">
-      <div className="border rounded-md border-gray-500 h-full  w-full flex flex-col p-4 sm:p-10 overflow-auto ">
+      <div className="border rounded-md border-gray-500 h-full overflow-y-scroll  no-scrollbar  w-full flex flex-col p-4 sm:p-10 overflow-auto ">
         <Tabs defaultValue="home" className="relative h-full">
           <div className="fixed flex justify-between flex-col w-[100px] h-[85vh] xl:h-[80vh]">
             <div className="flex flex-col gap-10">
@@ -123,9 +123,10 @@ export default function Home() {
                       <p>Git</p>
 
                       <Dot />
-                      <p>Payload CMS</p>
-
+                      <p>MongoDB</p>
                       <Dot />
+
+
                     </div>
                   </div>
                 </div>

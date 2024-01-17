@@ -18,7 +18,7 @@ import { Badge } from "./ui/badge";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col h-full justify-between max-w-[99%] items-end ml-auto">
+    <div className="flex flex-col h-full justify-between max-w-[99%] items-end ml-auto no-scrollbar">
       <div className="flex flex-col items-end">
         <div className=" sm:max-w-[500px] max-w-[250px] pl-4 h-full ">
           <ul className=" flex flex-col gap-5 no-scrollbar">
@@ -77,7 +77,7 @@ const Projects = () => {
                     </Link>
                   </span>
                 </span>
-                <p className="text-xs mt-3 rounded-md">
+                <p className="text-xs mt-3 rounded-md hidden sm:block">
                   {project.description}.
                 </p>
               </li>
@@ -96,7 +96,7 @@ const Projects = () => {
           <Badge>Tailwind</Badge>
           <Badge>Redux</Badge>
           <Badge>Git</Badge>
-          <Badge>Payload CMS</Badge>
+          <Badge>MongoDB</Badge>
         </div>
       </div>
     </div>
