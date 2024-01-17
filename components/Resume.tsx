@@ -19,7 +19,7 @@ const Resume = () => {
           <Download />
         </Link>
         <Link
-          href="https://www.canva.com/design/DAFQd5_hAxA/titdLeytVHqWMQmJWRWgGw/view?utm_content=DAFQd5_hAxA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+          href="https://drive.google.com/file/d/1EqX82KVgJteo-naNnr6Zn2K4zeyLi9RO/view?usp=sharing"
           target="_blank"
         >
           <ExternalLink />
