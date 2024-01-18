@@ -60,15 +60,4 @@ export const data = [
     details:
       "Dipps Beautifyers is a React project featuring Tailwind CSS, HTML, and Framer Motion for stunning animations, creating a delightful user experience.",
   },
-  {
-    id: 1, // Updated index
-    image: "/images/nexus.png",
-    title: "Nexus Gaming",
-    github: "https://github.com/igbanibo-Dengi/nexus-gaming",
-    demo: "https://nexusgaming.netlify.app/",
-    icons: ["Bootstrap", "HTML", "CSS", "JavaScript"],
-    description: "Bootstrap, HTML, CSS, and JavaScript.",
-    details:
-      "Nexus Gaming is a Bootstrap-based project incorporating HTML, CSS, and JavaScript, delivering a responsive and dynamic gaming platform.",
-  },
 ];

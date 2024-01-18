@@ -36,6 +36,7 @@ const Resume = () => {
           <Badge>Tailwind</Badge>
           <Badge>Redux</Badge>
           <Badge>Git</Badge>
+          <Badge>MongoDB</Badge>
         </div>
       </div>
     </div>
