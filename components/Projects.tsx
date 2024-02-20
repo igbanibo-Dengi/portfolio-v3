@@ -18,7 +18,7 @@ import { Badge } from "./ui/badge";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col h-full justify-between max-w-[99%] items-end ml-auto no-scrollbar">
+    <div className="flex flex-col h-full justify-center lg:justify-between max-w-[99%] items-end ml-auto no-scrollbar">
       <div className="flex flex-col items-end">
         <div className=" sm:max-w-[500px] max-w-[250px] pl-4 h-full ">
           <ul className=" flex flex-col gap-5 no-scrollbar">
