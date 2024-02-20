@@ -11,7 +11,7 @@ import Resume from "@/components/Resume";
 
 export default function Home() {
   return (
-    <main className=" h-svh w-screen sm:p-10 p-2 overflow-hidden  no-scrollbar bg-cover bg-center ">
+    <main className="mx-auto h-svh w-screen sm:p-10 p-2 overflow-hidden  no-scrollbar bg-cover bg-center ">
 
       <div className="border rounded-md border-gray-500 h-full overflow-y-scroll  no-scrollbar  w-full flex flex-col p-4 sm:p-10 overflow-auto ">
         <Tabs defaultValue="home" className="relative h-full z-50">
@@ -51,21 +51,21 @@ export default function Home() {
               <Link
                 href="https://www.linkedin.com/in/igbaniboalex/"
                 target="_blank"
-                className="hover:text-primary w-fit hover:animate-pulse"
+                className="hover:text-primary md:mb-2 w-fit hover:animate-bounce"
               >
                 <Linkedin />
               </Link>
               <Link
                 href="https://twitter.com/IgbaniboD"
                 target="_blank"
-                className="hover:text-primary w-fit hover:animate-pulse"
+                className="hover:text-primary md:mb-2 w-fit hover:animate-bounce"
               >
                 <Twitter />
               </Link>
               <Link
                 href="https://github.com/igbanibo-Dengi"
                 target="_blank"
-                className="hover:text-primary w-fit hover:animate-pulse"
+                className="hover:text-primary md:mb-2 w-fit hover:animate-bounce"
               >
                 <Github />
               </Link>
@@ -99,22 +99,25 @@ export default function Home() {
 
                   <div className="hidden  sm:flex justify-center gap-2 items-center overflow-hidden z-50">
                     <div className="marquee">
-                      <p>HTML</p>
+                      <p>HTML 5</p>
 
                       <Dot />
-                      <p>CSS</p>
+                      <p>CSS 3</p>
 
                       <Dot />
-                      <p>JavaScript</p>
+                      <p>JavaScript (ES6+)</p>
 
                       <Dot />
                       <p>Typescript</p>
 
                       <Dot />
-                      <p>React</p>
+                      <p>React.js</p>
 
                       <Dot />
-                      <p>Next</p>
+                      <p>Next.js</p>
+
+                      <Dot />
+                      <p>SASS</p>
 
                       <Dot />
                       <p>Tailwind</p>
@@ -123,7 +126,13 @@ export default function Home() {
                       <p>Redux</p>
 
                       <Dot />
+                      <p>Docker</p>
+
+                      <Dot />
                       <p>Git</p>
+
+                      <Dot />
+                      <p>Prisma</p>
 
                       <Dot />
                       <p>MongoDB</p>

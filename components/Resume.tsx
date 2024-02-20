@@ -26,16 +26,19 @@ const Resume = () => {
         </Link>
       </div>
       <div>
-        <div className="flex justify-center gap-2 items-center flex-wrap">
-          <Badge>HTML</Badge>
-          <Badge>CSS</Badge>
-          <Badge>JavaScript</Badge>
+        <div className="flex justify-center gap-2 items-center flex-wrap max-w-[500px]">
+          <Badge>HTML 5</Badge>
+          <Badge>CSS 3</Badge>
+          <Badge>JavaScript (ES6+)</Badge>
           <Badge>Typescript</Badge>
-          <Badge>React</Badge>
-          <Badge>Next</Badge>
+          <Badge>React.js</Badge>
+          <Badge>Next.js</Badge>
+          <Badge>SASS</Badge>
           <Badge>Tailwind</Badge>
           <Badge>Redux</Badge>
+          <Badge>Docker</Badge>
           <Badge>Git</Badge>
+          <Badge>Prisma</Badge>
           <Badge>MongoDB</Badge>
         </div>
       </div>
