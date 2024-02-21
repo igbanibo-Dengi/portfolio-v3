@@ -10,7 +10,7 @@ const Experience = () => {
                 </span>
                 <p className='mb-4 text-xs sm:text-base'>Maryland - Remote.</p>
                 <ul className='hidden sm:block  text-xs md:text-sm list-disc list-inside space-y-4 pb-5 sm:pb-0'>
-                    <li>Led the front-end team in rebuilding the company's public-facing website using Next.js, increasing load time by 20% and SEO score by 35%, driving 15% organic traffic</li>
+                    <li>Led the front-end team in rebuilding the company&apos;s public-facing website using Next.js, increasing load time by 20% and SEO score by 35%, driving 15% organic traffic</li>
                     <li>Successfully translated Figma designs into highly responsive and user-friendly web applications using React.js and Tailwind CSS, resulting in a measurable 20% increase in user engagement</li>
                     <li>Collaborated with UI/UX on design principles and streamlined workflow, reducing feedback loops by 30%</li>
                     <li>Conducted code reviews, ensuring code quality and consistency on multiple projects</li>
@@ -18,7 +18,7 @@ const Experience = () => {
                 </ul>
 
                 <ul className=' sm:hidden text-xs md:text-sm list-disc list-inside space-y-3 pb-5 sm:pb-0'>
-                    <li>Led the front-end team in rebuilding the company's website using Next.js, resulting in a 20% boost in load time and a 35% increase in SEO score, driving 15% more organic traffic.</li>
+                    <li>Led the front-end team in rebuilding the company&apos;s website using Next.js, resulting in a 20% boost in load time and a 35% increase in SEO score, driving 15% more organic traffic.</li>
                     <li>Translated Figma designs into highly responsive web applications using React.js and Tailwind CSS, boosting user engagement by 20%.</li>
                     <li> Collaborated with UI /UX to streamline workflow and reduce feedback loops by 30%.</li>
                     <li>Conducted code reviews, ensuring code quality and consistency on multiple projects</li>
