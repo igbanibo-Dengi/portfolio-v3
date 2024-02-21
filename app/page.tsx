@@ -6,6 +6,7 @@ import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import Link from "next/link";
 import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
+import Experience from "@/components/Experience";
 
 // bg - [url('/web2.jpg')] dark: bg - [url('/pic.jpg')]
 
@@ -26,6 +27,7 @@ export default function Home() {
 
               <TabsList>
                 <TabsTrigger value="home">Home</TabsTrigger>
+                <TabsTrigger value="experience">Experience</TabsTrigger>
                 <TabsTrigger value="projects">Projects</TabsTrigger>
                 <TabsTrigger value="resume">Resume</TabsTrigger>
                 <TabsTrigger value="contact-large" className="hidden xl:block">
@@ -47,6 +49,7 @@ export default function Home() {
               </TabsList>
             </div>
 
+            {/* SOCIAL LINKS */}
             <div className="flex flex-col gap-3">
               <Link
                 href="https://www.linkedin.com/in/igbaniboalex/"
@@ -72,6 +75,9 @@ export default function Home() {
               <ModeToggle />
             </div>
           </div>
+
+
+          {/* TABS CONTENT */}
           <div className="w-full h-full">
             <TabsContent value="home">
               <div className="flex flex-col justify-center  items-end h-full">
@@ -152,6 +158,9 @@ export default function Home() {
             </TabsContent>
             <TabsContent value="contact-large">
               <ContactForm />
+            </TabsContent>
+            <TabsContent value="experience">
+              <Experience />
             </TabsContent>
           </div>
         </Tabs>
