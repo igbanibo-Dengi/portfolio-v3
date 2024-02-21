@@ -11,7 +11,7 @@ import Resume from "@/components/Resume";
 
 export default function Home() {
   return (
-    <main className="mx-auto h-svh w-screen sm:p-10 p-2 overflow-hidden  no-scrollbar bg-cover bg-center ">
+    <main className="mx-auto h-screen w-screen sm:p-10 p-2 overflow-hidden  no-scrollbar bg-cover bg-center ">
 
       <div className="border rounded-md border-gray-500 h-full overflow-y-scroll  no-scrollbar  w-full flex flex-col p-4 sm:p-10 overflow-auto ">
         <Tabs defaultValue="home" className="relative h-full z-50">
