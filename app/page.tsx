@@ -102,40 +102,40 @@ export default function Home() {
                       <p>HTML</p>
 
                       <Dot />
-                      <p>CSS</p>
+                      <p className="whitespace-nowrap">CSS</p>
 
                       <Dot />
-                      <p>JavaScript (ES6+)</p>
+                      <p className="whitespace-nowrap">JavaScript (ES6+)</p>
 
                       <Dot />
-                      <p>Typescript</p>
+                      <p className="whitespace-nowrap">Typescript</p>
 
                       <Dot />
-                      <p>React.js</p>
+                      <p className="whitespace-nowrap">React.js</p>
 
                       <Dot />
-                      <p>Next.js</p>
+                      <p className="whitespace-nowrap">Next.js</p>
 
                       <Dot />
-                      <p>SASS</p>
+                      <p className="whitespace-nowrap">SASS</p>
 
                       <Dot />
-                      <p>Tailwind</p>
+                      <p className="whitespace-nowrap">Tailwind</p>
 
                       <Dot />
-                      <p>Redux</p>
+                      <p className="whitespace-nowrap">Redux</p>
 
                       <Dot />
-                      <p>Docker</p>
+                      <p className="whitespace-nowrap">Docker</p>
 
                       <Dot />
-                      <p>Git</p>
+                      <p className="whitespace-nowrap">Git</p>
 
                       <Dot />
-                      <p>Prisma</p>
+                      <p className="whitespace-nowrap">Prisma</p>
 
                       <Dot />
-                      <p>MongoDB</p>
+                      <p className="whitespace-nowrap">MongoDB</p>
                       <Dot />
 
 
