@@ -27,7 +27,7 @@ export default function Home() {
 
               <TabsList>
                 <TabsTrigger value="home">Home</TabsTrigger>
-                <TabsTrigger value="experience">Experience</TabsTrigger>
+                {/* <TabsTrigger value="experience">Experience</TabsTrigger> */}
                 <TabsTrigger value="projects">Projects</TabsTrigger>
                 <TabsTrigger value="resume">Resume</TabsTrigger>
                 <TabsTrigger value="contact-large" className="hidden xl:block">
@@ -159,9 +159,9 @@ export default function Home() {
             <TabsContent value="contact-large">
               <ContactForm />
             </TabsContent>
-            <TabsContent value="experience">
+            {/* <TabsContent value="experience">
               <Experience />
-            </TabsContent>
+            </TabsContent> */}
           </div>
         </Tabs>
 
