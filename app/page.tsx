@@ -99,10 +99,10 @@ export default function Home() {
 
                   <div className="hidden  sm:flex justify-center gap-2 items-center overflow-hidden z-50">
                     <div className="marquee">
-                      <p>HTML 5</p>
+                      <p>HTML</p>
 
                       <Dot />
-                      <p>CSS 3</p>
+                      <p>CSS</p>
 
                       <Dot />
                       <p>JavaScript (ES6+)</p>
