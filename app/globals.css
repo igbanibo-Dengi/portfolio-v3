@@ -126,6 +126,8 @@
   animation: badges 40s linear infinite;
 }
 
+/* background animation */
+
 .area {
   background: transparent;
   /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); */
