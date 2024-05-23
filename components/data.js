@@ -2,6 +2,7 @@ export const data = [
   {
     id: 7,
     image: "/images/armory.png",
+    link: "/armory",
     title: "Armory",
     github: "https://github.com/igbanibo-Dengi/the-armory",
     demo: "https://the-armory.vercel.app/",
@@ -18,6 +19,7 @@ export const data = [
   {
     id: 6,
     image: "/images/ticketlee.png",
+    link: "/ticketlee",
     title: "Ticketlee",
     github: "https://github.com/igbanibo-Dengi/ticketlee",
     demo: "https://ticketlee.vercel.app/",
@@ -33,6 +35,7 @@ export const data = [
   {
     id: 5, // Updated index
     image: "/images/get-linked.png",
+    link: "/get-linked",
     title: "Getlinked",
     github: "https://github.com/igbanibo-Dengi/get_linked",
     demo: "https://get-linked-amber.vercel.app/",
@@ -44,6 +47,7 @@ export const data = [
   {
     id: 4, // Updated index
     image: "/images/Pixel-Host.png",
+    link: "/pixelhost",
     title: "PixelHost",
     github: "https://github.com/igbanibo-Dengi/vision",
     demo: "https://pixelhost-three.vercel.app/",
@@ -55,6 +59,7 @@ export const data = [
   {
     id: 3, // Updated index
     image: "/images/MCU.png",
+    link: "/mcu",
     title: "MCU Library",
     github: "https://github.com/igbanibo-Dengi/mcu-database",
     demo: "https://marvelcinematicuniversedatabase.netlify.app/",

@@ -8,7 +8,7 @@ import { Badge } from "./ui/badge";
 const Resume = () => {
   return (
     <div className="flex flex-col gap-10 justify-center items-center h-full w-full">
-      <div className="flex gap-2">
+      <div className="flex gap-4">
         <Link
           href="Igbanibo_Alex _Resume.pdf"
           download="resume.pdf"
@@ -21,11 +21,13 @@ const Resume = () => {
         <Link
           href="https://drive.google.com/file/d/1RjW1683ekV_hK-Hc2I-mh62FGobH3feg/view?usp=sharing"
           target="_blank"
+          className="hover:text-primary"
         >
           <ExternalLink />
         </Link>
       </div>
       <div>
+        {/* <h1 className="text-center mb-4 md:text-lg font-semibold">Skills</h1> */}
         <div className="flex justify-center gap-2 items-center flex-wrap max-w-[500px]">
           <Badge>HTML 5</Badge>
           <Badge>CSS 3</Badge>
