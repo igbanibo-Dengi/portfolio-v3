@@ -5,83 +5,83 @@ import Image from "next/image";
 import { StickyScroll } from "@/components/ticky-scroll-reveal";
 import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import Copy from "@/components/Copy"
 
 const content = [
     {
-        title: "Collaborative Editing",
+        title: "The Armory",
         description:
-            "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+            "The Armory is a comprehensive full-stack web application designed for Call of Duty Mobile players. It allows users to create, customize, and share gunsmith builds and loadouts with the community. Built with a robust tech stack including React, Next.js, Clerk, and MongoDB, The Armory offers a seamless and engaging user experience.",
         content: (
             <div className="flex flex-col gap-10 items-center justify-center size-full">
                 <Image
-                    src='/images/armory.png'
-                    width={700}
-                    height={700}
-                    // className="mx-auto"
-                    alt="linear board demo"
-                />
-                {/* <div className="flex gap-5 items-center">
-                    <Link href='/' target="_blank">
-                        <Github className="hover:text-primary hidden sm:block" />
-                    </Link>
-                    <Link href='/' target="_blank">
-                        <ExternalLink className="hover:text-primary hidden sm:block" />
-                    </Link>
-                </div> */}
-            </div>
-        ),
-    },
-    {
-        title: "Real time changes",
-        description:
-            "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-        content: (
-            <div className="flex flex-col gap-10 items-center justify-center size-full">
-                <Image
-                    src='/images/ticketlee.png'
+                    src='/images/armory/armory.png'
                     width={700}
                     height={700}
                     className="mx-auto border-2 rounded-md"
                     alt="linear board demo"
                 />
-                {/* <div className="flex gap-5 items-center">
-                    <Link href='/' target="_blank">
-                        <Github className="hover:text-primary hidden sm:block" />
-                    </Link>
-                    <Link href='/' target="_blank">
-                        <ExternalLink className="hover:text-primary hidden sm:block" />
-                    </Link>
-                </div> */}
             </div>
         ),
     },
     {
-        title: "Version control",
+        title: "Auth with Clerk",
         description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+            "Clerk is an authentication and user management service that simplifies the process of adding secure and reliable authentication to web applications. It provides a suite of tools and APIs for handling user registration, login, and profile management, along with advanced security features.",
+        content: (
+            <div className="flex flex-col gap-10 items-center justify-center size-full">
+                <Image
+                    src='/images/armory/clerk.png'
+                    width={700}
+                    height={700}
+                    className="mx-auto border-2 rounded-md"
+                    alt="Clerk"
+                />
+            </div>
+        ),
+    },
+    {
+        title: "Backend",
+        description:
+            "The Armory's backend, powered by Next.js server actions and MongoDB, orchestrates seamless communication between the frontend and database. MongoDB efficiently stores user data and loadout information, while custom queries enable CRUD operations for loadout management. This robust backend infrastructure ensures a smooth and scalable user experience.",
         content: (
             <div className="flex flex-col gap-10 items-center justify-center xl:size-full">
                 <Image
-                    src="/images/get-linked.png"
+                    src="/images/armory/mongo.png"
                     width={700}
                     height={700}
                     className="mx-auto border-2 rounded-md"
-                    alt="linear board demo"
+                    alt="Mongo"
                 />
-                {/* <div className="flex gap-5 items-center">
-                    <Link href='/' target="_blank">
-                        <Github className="hover:text-primary hidden sm:block" />
-                    </Link>
-                    <Link href='/' target="_blank">
-                        <ExternalLink className="hover:text-primary hidden sm:block" />
-                    </Link>
-                </div> */}
+            </div>
+        ),
+    },
+    {
+        title: "Conclusion",
+        description:
+            "The platform facilitates easy loadout management, allowing users to create new loadouts, edit existing ones, and bookmark loadouts created by other players for quick reference. Additionally, advanced search and filter functionalities empower users to discover specific loadouts tailored to their preferences. Whether it's fine-tuning weapon attachments or exploring innovative loadout strategies, The Armory provides a comprehensive toolkit to optimize gameplay and elevate the gaming experience.",
+        content: (
+            <div className="flex flex-col gap-10 items-center justify-center xl:size-full">
+                <Image
+                    src="/images/armory/crud.png"
+                    width={700}
+                    height={700}
+                    className="mx-auto border-2 rounded-md"
+                    alt="Mongo"
+                />
             </div>
         ),
     },
 
+
 ];
 export default function StickyScrollRevealDemo() {
+
+    const guestUsername = "demoUser";
+    const guestPassword = "theArmory";
+
+
     return (
         <div className="p-5 md:p-0 flex flex-col items-center justify-center size-full ">
             <div className="flex flex-col gap-5 md:gap-10 items-center justify-center size-fit pb-5 md:pb-10 bg-transparent xl:hidden">
@@ -100,8 +100,36 @@ export default function StickyScrollRevealDemo() {
                         <ExternalLink className="hover:text-primary" />
                     </Link>
                 </div>
+
+            </div>
+            <div className="font-semibold text-center flex gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base mt-3">
+                <h3 className="w-full hidden md:block">Demo Account:</h3>
+                <div className="flex gap-4 w-full">
+                    <Copy title='Userrname' value={guestUsername} />
+                    <Copy title='Password' value={guestPassword} />
+                </div>
             </div>
             <StickyScroll content={content} />
+            <div className="gap-3 items-center absolute top-10 right-10 hidden xl:flex flex-col">
+                <Link href='https://github.com/igbanibo-Dengi/the-armory' target="_blank">
+                    <Github className="hover:text-primary" />
+                </Link>
+                <Link href='https://the-armory.vercel.app/' target="_blank">
+                    <ExternalLink className="hover:text-primary" />
+                </Link>
+            </div>
+            <div className="flex-col lg:flex-row gap-2 lg:gap-4 absolute bottom-2 hidden lg:flex">
+                <p className="text-lg xl:font-semibold text-center">Technologies:</p>
+                <div className="flex flex-wrap gap-2 items-center justify-center">
+                    <Badge>React.js</Badge>
+                    <Badge>Next.js</Badge>
+                    <Badge>MongoDB</Badge>
+                    <Badge>Clerk</Badge>
+                    <Badge>TailwinCSS</Badge>
+                    <Badge>ShadCN UI</Badge>
+                </div>
+
+            </div>
         </div>
     );
 }

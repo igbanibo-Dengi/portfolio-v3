@@ -2,6 +2,7 @@ import BackButton from "@/components/BackButton";
 import SocialLinks from "@/components/SocialLinks";
 import { ModeToggle } from "@/components/ThemeToggle/ThemeToggle";
 import { HoverBorderGradient } from "@/components/hover-border-gradient";
+import { ChevronsDown, Mouse } from "lucide-react";
 import type { Metadata } from "next";
 
 
@@ -38,8 +39,12 @@ export default function RootLayout({
                     ))}
                 </ul>
             </div >
-            <div className="absolute bottom-10 xl:bottom-20 left-10 xl:left-[60px] z-50">
+            <div className="absolute bottom-10 xl:bottom-14 right-10 xl:right-[60px] z-50">
                 <ModeToggle />
+            </div>
+            <div className="absolute animate-bounce bottom-14 left-14 flex-col justify-center items-center hidden xl:flex">
+                <Mouse size={28} className="rotate-180" />
+                {/* <ChevronsDown size={18} /> */}
             </div>
         </main>
 

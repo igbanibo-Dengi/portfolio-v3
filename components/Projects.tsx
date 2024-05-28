@@ -19,9 +19,9 @@ import { Badge } from "./ui/badge";
 const Projects = () => {
   return (
     <div className="flex flex-col h-full justify-between max-w-[99%] items-end ml-auto no-scrollbar">
-      <div className="flex flex-col gap-5 justify-between xl:justify-around h-full">
+      <div className="flex items-center gap-5 justify-between xl:justify-around h-full">
         <div className="size-fit hidden lg:flex flex-col mx-auto">
-          {/* <h2 className="text-center mb-5 font-semibold text-lg">Skills</h2> */}
+          <h2 className="text-center mb-5 font-semibold text-lg">Skills</h2>
           <div className="flex justify-center gap-2 items-center flex-wrap max-w-[400px] xl:max-w-[500px]">
             <Badge>HTML 5</Badge>
             <Badge>CSS 3</Badge>

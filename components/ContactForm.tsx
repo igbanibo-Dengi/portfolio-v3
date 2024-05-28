@@ -17,6 +17,8 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import { Loader } from "lucide-react";
 //Form schema
 const formSchema = z.object({
   firstName: z.string().min(2, {
@@ -35,6 +37,9 @@ const formSchema = z.object({
 });
 
 export default function ContactForm() {
+
+  const [isSubmiting, setIsSubmiting] = useState(false)
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -47,6 +52,7 @@ export default function ContactForm() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
+    setIsSubmiting(true)
 
     emailjs
       .sendForm(
@@ -69,6 +75,8 @@ export default function ContactForm() {
           email: "",
           message: "",
         });
+
+        setIsSubmiting(false)
       })
 
       .catch((error) => {
@@ -156,8 +164,12 @@ export default function ContactForm() {
             )}
           />
 
-          <Button type="submit" className="w-fit ml-auto">
-            Submit
+          <Button type="submit" className="w-full  md:w-28 ml-auto">
+            {isSubmiting ? (
+              <Loader className="animate-spin" />
+            ) : (
+              "Submit"
+            )}
           </Button>
         </form>
       </Form>
