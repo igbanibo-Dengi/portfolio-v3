@@ -1,5 +1,21 @@
 export const data = [
   {
+    id: 8,
+    image: "/images/armory.png",
+    link: "/grid_wallet",
+    title: "Grid Wallet",
+    github: "https://github.com/igbanibo-Dengi/grid_bank_app",
+    demo: "https://gridwallet.vercel.app/",
+    icons: ["Next.js", "MongoDB", "Clerk", "ShadCN UI"],
+    description: "Next.js, server actions, Appwrite, Plaid, Dwolla .",
+    details:
+      "  -Armory is a platform for CODM playees to share and find gunsmith builds for their loadouts\n" +
+      "  - Built with Next.js server actions, MongoDB, ShadCN UI and Clerk for authentication\n" +
+      "  - Sign in details:\n" +
+      "    - Username: guest\n" +
+      "    - Password: teeketly",
+  },
+  {
     id: 7,
     image: "/images/armory.png",
     link: "/armory",
@@ -32,18 +48,18 @@ export const data = [
       "    - Username: guest\n" +
       "    - Password: teeketly",
   },
-  {
-    id: 5, // Updated index
-    image: "/images/get-linked.png",
-    link: "/get-linked",
-    title: "Getlinked",
-    github: "https://github.com/igbanibo-Dengi/get_linked",
-    demo: "https://get-linked-amber.vercel.app/",
-    icons: ["Next.js", "Tailwind CSS", "ShadCN UI", "Framer Motion"],
-    description: "React, ShadCN UI and Framer Motion.",
-    details:
-      "Getlinked was built during a hackathon event I participated in, I used Next.js for the frontend framework, Tailwind CSS for styling, ShadCn UI for building the user interface components, and Framer motion for animations",
-  },
+  // {
+  //   id: 5, // Updated index
+  //   image: "/images/get-linked.png",
+  //   link: "/get-linked",
+  //   title: "Getlinked",
+  //   github: "https://github.com/igbanibo-Dengi/get_linked",
+  //   demo: "https://get-linked-amber.vercel.app/",
+  //   icons: ["Next.js", "Tailwind CSS", "ShadCN UI", "Framer Motion"],
+  //   description: "React, ShadCN UI and Framer Motion.",
+  //   details:
+  //     "Getlinked was built during a hackathon event I participated in, I used Next.js for the frontend framework, Tailwind CSS for styling, ShadCn UI for building the user interface components, and Framer motion for animations",
+  // },
   {
     id: 4, // Updated index
     image: "/images/Pixel-Host.png",

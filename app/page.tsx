@@ -126,7 +126,7 @@ export default function Home() {
                       <Dot />
                       <p className="whitespace-nowrap">CSS</p>
                       <Dot />
-                      <p className="whitespace-nowrap">JavaScript (ES6+)</p>
+                      <p className="whitespace-nowrap">JavaScript</p>
                       <Dot />
                       <p className="whitespace-nowrap">Typescript</p>
                       <Dot />

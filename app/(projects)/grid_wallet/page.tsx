@@ -1,5 +1,5 @@
-
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import { StickyScroll } from "@/components/ticky-scroll-reveal";
@@ -7,42 +7,37 @@ import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Copy from "@/components/Copy"
-const guestUsername = "demoUser";
-const guestPassword = "theArmory";
+const guestUsername = "testuser@gmail.com";
+const guestPassword = "qwertyuiop";
+
+
 
 
 const content = [
     {
-        title: "The Armory",
+        title: "Grid Wallet",
         description:
-            "The Armory is a comprehensive full-stack web application designed for Call of Duty Mobile players. It allows users to create, customize, and share gunsmith builds and loadouts with the community. Built with a robust tech stack including React, Next.js, Clerk, and MongoDB, The Armory offers a seamless and engaging user experience.",
+            "Grid Wallet is a finance project developed using Next.js, Appwrite, Plaid, Dwolla, and Sentry. It provides a platform for users to manage their finances by monitoring bank accounts, viewing transaction histories, transferring funds, and connecting new accounts. The focus is on creating a seamless, user-friendly experience with an emphasis on data security.",
         content: (
             <div className="flex flex-col gap-2 items-center justify-center size-full">
                 <Image
-                    src='/images/armory/armory.png'
+                    src='/images/grid/home.png'
                     width={700}
                     height={700}
                     className="mx-auto border-2 rounded-md"
                     alt="linear board demo"
                 />
-                <div className="font-semibold text-center flex gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base">
-                    <h3 className="w-full hidden md:block">Demo Account:</h3>
-                    <div className="flex gap-4 w-full">
-                        <Copy title='Userrname' value={guestUsername} />
-                        <Copy title='Password' value={guestPassword} />
-                    </div>
-                </div>
             </div>
         ),
     },
     {
-        title: "Auth with Clerk",
+        title: "Auth & Database",
         description:
-            "Clerk is an authentication and user management service that simplifies the process of adding secure and reliable authentication to web applications. It provides a suite of tools and APIs for handling user registration, login, and profile management, along with advanced security features.",
+            "The authentication system in Grid Wallet allows easy sign-in and sign-up processes. Appwrite powers the backend, managing databases and collections for banks, transactions, and users. This ensures secure data handling and robust user authentication, providing strong access control mechanisms to protect user data.",
         content: (
             <div className="flex flex-col gap-10 items-center justify-center size-full">
                 <Image
-                    src='/images/armory/clerk.png'
+                    src='/images/grid/appwrite.png'
                     width={700}
                     height={700}
                     className="mx-auto border-2 rounded-md"
@@ -52,13 +47,29 @@ const content = [
         ),
     },
     {
-        title: "Backend",
+        title: "Plaid & Dwolla",
         description:
-            "The Armory's backend, powered by Next.js server actions and MongoDB, orchestrates seamless communication between the frontend and database. MongoDB efficiently stores user data and loadout information, while custom queries enable CRUD operations for loadout management. This robust backend infrastructure ensures a smooth and scalable user experience.",
+            "Plaid integration enables users to connect and fetch real-time data from their bank accounts, while Dwolla handles ACH transfers and payment operations. This integration allows users to manage their finances efficiently, providing seamless and user-friendly financial operations.",
         content: (
             <div className="flex flex-col gap-10 items-center justify-center xl:size-full">
                 <Image
-                    src="/images/armory/mongo.png"
+                    src='/images/grid/plaid.png'
+                    width={700}
+                    height={700}
+                    className="mx-auto border-2 rounded-md"
+                    alt="Mongo"
+                />
+            </div>
+        ),
+    },
+    {
+        title: "Sentry",
+        description:
+            "Sentry is integrated for real-time error tracking and monitoring. It helps identify and diagnose issues within the application, ensuring high reliability. Proactive monitoring and detailed error reports from Sentry maintain the application's stability and enhance the overall user experience.",
+        content: (
+            <div className="flex flex-col gap-10 items-center justify-center xl:size-full">
+                <Image
+                    src='/images/grid/sentry.png'
                     width={700}
                     height={700}
                     className="mx-auto border-2 rounded-md"
@@ -70,11 +81,11 @@ const content = [
     {
         title: "Conclusion",
         description:
-            "The platform facilitates easy loadout management, allowing users to create new loadouts, edit existing ones, and bookmark loadouts created by other players for quick reference. Additionally, advanced search and filter functionalities empower users to discover specific loadouts tailored to their preferences. Whether it's fine-tuning weapon attachments or exploring innovative loadout strategies, The Armory provides a comprehensive toolkit to optimize gameplay and elevate the gaming experience.",
+            "Grid Wallet showcases a robust financial management application that leverages modern web technologies. The integration of Appwrite, Plaid, Dwolla, and Sentry demonstrates proficiency in both frontend and backend development. The project highlights the ability to create a secure, efficient, and user-friendly financial platform with a strong emphasis on user experience and data security.",
         content: (
             <div className="flex flex-col gap-10 items-center justify-center xl:size-full">
                 <Image
-                    src="/images/armory/crud.png"
+                    src='/images/grid/transfer.png'
                     width={700}
                     height={700}
                     className="mx-auto border-2 rounded-md"
@@ -83,10 +94,10 @@ const content = [
             </div>
         ),
     },
-
-
 ];
-export default function StickyScrollRevealDemo() {
+
+
+const gridPage = () => {
     return (
         <div className="p-5 md:p-0 flex flex-col items-center justify-center size-full ">
             <div className="flex flex-col gap-5 md:gap-10 items-center justify-center size-fit pb-5 md:pb-10 bg-transparent xl:hidden">
@@ -105,8 +116,14 @@ export default function StickyScrollRevealDemo() {
                         <ExternalLink className="hover:text-primary" />
                     </Link>
                 </div>
-
             </div>
+            < div className="font-semibold text-center flex gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base" >
+                <h3 className="w-full hidden md:block">Demo Account:</h3>
+                <div className="flex gap-4 w-full">
+                    <Copy title='Userrname' value={guestUsername} />
+                    <Copy title='Password' value={guestPassword} />
+                </div>
+            </div >
 
             <StickyScroll content={content} />
             <div className="gap-3 items-center absolute top-10 right-10 hidden xl:flex flex-col">
@@ -122,9 +139,10 @@ export default function StickyScrollRevealDemo() {
                 <div className="flex flex-wrap gap-2 items-center justify-center">
                     <Badge>React.js</Badge>
                     <Badge>Next.js</Badge>
-                    <Badge>MongoDB</Badge>
-                    <Badge>Clerk</Badge>
-                    <Badge>TailwinCSS</Badge>
+                    <Badge>Plaid</Badge>
+                    <Badge>Dwolla</Badge>
+                    <Badge>Appwrite</Badge>
+                    <Badge>Sentry</Badge>
                     <Badge>ShadCN UI</Badge>
                 </div>
 
@@ -132,3 +150,9 @@ export default function StickyScrollRevealDemo() {
         </div>
     );
 }
+
+export default gridPage
+
+
+
+
