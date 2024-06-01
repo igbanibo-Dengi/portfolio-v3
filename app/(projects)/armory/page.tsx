@@ -25,13 +25,6 @@ const content = [
                     className="mx-auto border-2 rounded-md"
                     alt="linear board demo"
                 />
-                <div className="font-semibold text-center flex gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base">
-                    <h3 className="w-full hidden md:block">Demo Account:</h3>
-                    <div className="flex gap-4 w-full">
-                        <Copy title='Userrname' value={guestUsername} />
-                        <Copy title='Password' value={guestPassword} />
-                    </div>
-                </div>
             </div>
         ),
     },
@@ -105,11 +98,18 @@ export default function StickyScrollRevealDemo() {
                         <ExternalLink className="hover:text-primary" />
                     </Link>
                 </div>
+            </div>
 
+            <div className="absolute top-5 font-semibold text-center flex gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base">
+                <h3 className="w-full hidden md:block">Demo Account:</h3>
+                <div className="flex gap-4 w-full">
+                    <Copy title='Userrname' value={guestUsername} />
+                    <Copy title='Password' value={guestPassword} />
+                </div>
             </div>
 
             <StickyScroll content={content} />
-            <div className="gap-3 items-center absolute top-10 right-10 hidden xl:flex flex-col">
+            <div className="gap-3 items-center absolute top-5 right-10 hidden xl:flex flex-col">
                 <Link href='https://github.com/igbanibo-Dengi/the-armory' target="_blank">
                     <Github className="hover:text-primary" />
                 </Link>
@@ -124,6 +124,7 @@ export default function StickyScrollRevealDemo() {
                     <Badge>Next.js</Badge>
                     <Badge>MongoDB</Badge>
                     <Badge>Clerk</Badge>
+                    <Badge>Typescript</Badge>
                     <Badge>TailwinCSS</Badge>
                     <Badge>ShadCN UI</Badge>
                 </div>

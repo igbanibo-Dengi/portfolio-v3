@@ -163,7 +163,7 @@ const TicketleePage = () => {
                     </Link>
                 </div>
             </div>
-            <div className="font-semibold text-center flex gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base mt-3">
+            <div className="absolute top-5 font-semibold text-center flex gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base mt-3">
                 <h3 className="w-full hidden md:block">Demo Account:</h3>
                 <div className="flex gap-4 w-full">
                     <Copy title='Userrname' value={guestUsername} />
@@ -188,6 +188,7 @@ const TicketleePage = () => {
                     <Badge>Clerk</Badge>
                     <Badge>Stripe</Badge>
                     <Badge>Uploadthing</Badge>
+                    <Badge>Typescript</Badge>
                     <Badge>TailwinCSS</Badge>
                     <Badge>ShadCN UI</Badge>
                 </div>

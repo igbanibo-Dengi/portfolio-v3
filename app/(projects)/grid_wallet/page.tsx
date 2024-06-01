@@ -117,7 +117,7 @@ const gridPage = () => {
                     </Link>
                 </div>
             </div>
-            < div className="font-semibold text-center flex gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base" >
+            < div className="absolute top-5 font-semibold text-center flex gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base" >
                 <h3 className="w-full hidden md:block">Demo Account:</h3>
                 <div className="flex gap-4 w-full">
                     <Copy title='Userrname' value={guestUsername} />
@@ -126,7 +126,7 @@ const gridPage = () => {
             </div >
 
             <StickyScroll content={content} />
-            <div className="gap-3 items-center absolute top-10 right-10 hidden xl:flex flex-col">
+            <div className="gap-3 items-center absolute top-5 right-10 hidden xl:flex flex-col">
                 <Link href='https://github.com/igbanibo-Dengi/the-armory' target="_blank">
                     <Github className="hover:text-primary" />
                 </Link>
@@ -143,6 +143,7 @@ const gridPage = () => {
                     <Badge>Dwolla</Badge>
                     <Badge>Appwrite</Badge>
                     <Badge>Sentry</Badge>
+                    <Badge>Typescript</Badge>
                     <Badge>ShadCN UI</Badge>
                 </div>
 
