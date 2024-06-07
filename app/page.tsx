@@ -117,7 +117,7 @@ export default function Home() {
                     <p className="indent-10">My journey in web development is all about blending creativity with technical know-how. If you&apos;re into innovative and functional web experiences, dive into my portfolio. Let&apos;s make something awesome together!</p>
                   </span>
                   <span className="w-[200px] sm:hidden text-sm sm:font-semibold pt-20 max-[400px]:pt-0">
-                    <p>Hey there! I'm Igbanibo Dengimo-owei Alex, but you can call me Dengi. I&apos;m a front-end focused web developer based in Nigeria, passionate about crafting beautiful, scalable, and responsive web designs. Whether I&apos;m working solo or as part of a team, I love bringing creative ideas to life on the web.</p>
+                    <p>Hey there! I&apos;m Igbanibo Dengimo-owei Alex, but you can call me Dengi. I&apos;m a front-end focused web developer based in Nigeria, passionate about crafting beautiful, scalable, and responsive web designs. Whether I&apos;m working solo or as part of a team, I love bringing creative ideas to life on the web.</p>
                   </span>
 
                   <div className="hidden sm:flex justify-center gap-2 items-center overflow-hidden z-50">
