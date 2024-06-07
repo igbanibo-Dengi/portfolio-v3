@@ -120,7 +120,7 @@ const gridPage = () => {
             < div className="absolute top-5 font-semibold text-center flex gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base" >
                 <h3 className="w-full hidden md:block">Demo Account:</h3>
                 <div className="flex gap-4 w-full">
-                    <Copy title='Userrname' value={guestUsername} />
+                    <Copy title='email' value={guestUsername} />
                     <Copy title='Password' value={guestPassword} />
                 </div>
             </div >
