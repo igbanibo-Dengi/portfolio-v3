@@ -98,10 +98,16 @@ export default function StickyScrollRevealDemo() {
                         <ExternalLink className="hover:text-primary" />
                     </Link>
                 </div>
+                <div className="font-semibold text-center gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base">
+                    <div className="flex gap-4 w-full">
+                        <Copy title='Userrname' value={guestUsername} />
+                        <Copy title='Password' value={guestPassword} />
+                    </div>
+                </div>
             </div>
 
-            <div className="absolute top-5 font-semibold text-center flex gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base">
-                <h3 className="w-full hidden md:block">Demo Account:</h3>
+            <div className="hidden xl:block absolute top-5 font-semibold text-center gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base">
+                <h3 className="w-ful mb-1">Demo Account</h3>
                 <div className="flex gap-4 w-full">
                     <Copy title='Userrname' value={guestUsername} />
                     <Copy title='Password' value={guestPassword} />
@@ -117,7 +123,7 @@ export default function StickyScrollRevealDemo() {
                     <ExternalLink className="hover:text-primary" />
                 </Link>
             </div>
-            <div className="flex-col lg:flex-row gap-2 lg:gap-4 absolute bottom-2 hidden lg:flex">
+            <div className="flex-col xl:flex-row gap-2 lg:gap-4 absolute bottom-2 hidden lg:flex">
                 <p className="text-lg xl:font-semibold text-center">Technologies:</p>
                 <div className="flex flex-wrap gap-2 items-center justify-center">
                     <Badge>React.js</Badge>

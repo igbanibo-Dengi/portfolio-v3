@@ -102,7 +102,7 @@ const gridPage = () => {
         <div className="p-5 md:p-0 flex flex-col items-center justify-center size-full ">
             <div className="flex flex-col gap-5 md:gap-10 items-center justify-center size-fit pb-5 md:pb-10 bg-transparent xl:hidden">
                 <Image
-                    src='/images/armory.png'
+                    src='/images/grid/home.png'
                     width={700}
                     height={700}
                     className="mx-auto"
@@ -116,8 +116,14 @@ const gridPage = () => {
                         <ExternalLink className="hover:text-primary" />
                     </Link>
                 </div>
+                < div className="font-semibold text-center gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base" >
+                    <div className="flex gap-4 w-full">
+                        <Copy title='email' value={guestUsername} />
+                        <Copy title='Password' value={guestPassword} />
+                    </div>
+                </div >
             </div>
-            < div className="absolute top-5 font-semibold text-center flex gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base" >
+            < div className="hidden xl:block absolute top-5 font-semibold text-center gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base" >
                 <h3 className="w-full hidden md:block">Demo Account:</h3>
                 <div className="flex gap-4 w-full">
                     <Copy title='email' value={guestUsername} />
@@ -134,7 +140,7 @@ const gridPage = () => {
                     <ExternalLink className="hover:text-primary" />
                 </Link>
             </div>
-            <div className="flex-col lg:flex-row gap-2 lg:gap-4 absolute bottom-2 hidden lg:flex">
+            <div className="flex-col xl:flex-row gap-2 lg:gap-4 absolute bottom-2 hidden lg:flex">
                 <p className="text-lg xl:font-semibold text-center">Technologies:</p>
                 <div className="flex flex-wrap gap-2 items-center justify-center">
                     <Badge>React.js</Badge>

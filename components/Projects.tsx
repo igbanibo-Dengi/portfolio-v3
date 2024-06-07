@@ -29,8 +29,8 @@ const Projects = () => {
             <Badge>MongoDB</Badge>
           </div>
         </div>
-        <div className=" sm:max-w-[500px] max-w-[250px] pl-4 h-fit ">
-          <h2 className="text-center mb-5 font-semibold text-lg underline">Projects</h2>
+        <div className=" sm:max-w-[500px] max-w-[250px] pl-4 h-fit my-auto">
+          <h2 className="hidden md:block text-center mb-5 font-semibold text-lg underline">Projects</h2>
           <ul className=" flex flex-col gap-5 no-scrollbar pt-6 md:pt-0 ">
             {data?.map((project) => (
               <li

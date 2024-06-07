@@ -5,7 +5,7 @@ import { Undo2 } from 'lucide-react'
 
 const BackButton = () => {
     return (
-        <div className='hidden md:block absolute bottom-10 right-10 xl:top-14 xl:left-12 z-50 size-fit'>
+        <div className='hidden md:block absolute bottom-10 left-10 xl:top-14 xl:left-12 z-50 size-fit'>
             <Button asChild variant={'ghost'} className='border-gray-600'>
                 <Link href="/?tab=projects" className='flex'>
                     {/* <p className='hidden xl:block'>Back to projects</p> */}
