@@ -10,8 +10,8 @@ const Resume = () => {
     <div className="flex flex-col gap-10 justify-center items-center h-full w-full">
       <div className="flex gap-4">
         <Link
-          href="Igbanibo_Alex _Resume.pdf"
-          download="resume.pdf"
+          href="IGBANIBO_DENGIMO-OWEI_ALEX_RESUME.pdf"
+          download="IGBANIBO_DENGIMO-OWEI_ALEX_RESUME"
           target="_blank"
           rel="noreferrer"
           className="hover:text-primary"
@@ -19,7 +19,7 @@ const Resume = () => {
           <Download />
         </Link>
         <Link
-          href="https://drive.google.com/file/d/1RjW1683ekV_hK-Hc2I-mh62FGobH3feg/view?usp=sharing"
+          href="https://drive.google.com/file/d/1OfFhehUO2jwggfFpA_T51dvmoyuK2rxf/view?usp=sharing"
           target="_blank"
           className="hover:text-primary"
         >

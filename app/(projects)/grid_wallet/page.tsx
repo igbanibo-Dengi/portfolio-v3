@@ -96,15 +96,15 @@ const content = [
 const gridPage = () => {
   return (
     <div className="p-5 md:p-0 flex flex-col items-center justify-center size-full ">
-      <div className="flex flex-col gap-5 md:gap-10 items-center justify-center size-fit pb-5 md:pb-10 bg-transparent xl:hidden">
-        <Image
-          src="/images/grid/home.png"
-          width={700}
-          height={700}
-          className="mx-auto"
-          alt="linear board demo"
-        />
-        <div className="flex gap-5 items-center">
+      <div className="hidden xl:block absolute top-5 font-semibold text-center gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base">
+        <h3 className="w-full hidden md:block">Demo Account:</h3>
+        <div className="flex gap-4 w-full">
+          <Copy title="email" value={guestUsername} />
+          <Copy title="Password" value={guestPassword} />
+        </div>
+      </div>
+      <div className="xl:hidden">
+        <div className="gap-5 items-center mb-2 flex justify-center">
           <Link
             href="https://github.com/igbanibo-Dengi/grid_bank_app"
             target="_blank"
@@ -116,17 +116,11 @@ const gridPage = () => {
           </Link>
         </div>
         <div className="font-semibold text-center gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base">
+          <h3 className="w-full text-sm">Demo Account:</h3>
           <div className="flex gap-4 w-full">
             <Copy title="email" value={guestUsername} />
             <Copy title="Password" value={guestPassword} />
           </div>
-        </div>
-      </div>
-      <div className="hidden xl:block absolute top-5 font-semibold text-center gap-0 md:gap-3 items-center flex-col md:flex-row text-xs md:text-base">
-        <h3 className="w-full hidden md:block">Demo Account:</h3>
-        <div className="flex gap-4 w-full">
-          <Copy title="email" value={guestUsername} />
-          <Copy title="Password" value={guestPassword} />
         </div>
       </div>
 
