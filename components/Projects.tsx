@@ -22,9 +22,10 @@ const Projects = () => {
             <Badge>Next.js</Badge>
             <Badge>SASS</Badge>
             <Badge>Redux</Badge>
-            <Badge>Docker</Badge>
+            {/* <Badge>Docker</Badge> */}
             <Badge>Git</Badge>
             <Badge>Prisma</Badge>
+            <Badge>Drizzle</Badge>
             <Badge>Tailwind</Badge>
             <Badge>MongoDB</Badge>
           </div>
@@ -38,7 +39,7 @@ const Projects = () => {
                 className="hover:text-muted-foreground hover:bg-muted rounded-md p-2"
               >
                 <span className="flex items-center justify-between">
-                  <p className=" text-base sm:text-2xl">{project.title}.</p>
+                  <Link href={project.link} className=" text-base sm:text-2xl">{project.title}.</Link>
                   <span className="flex gap-2 items-center">
                     <Link href={project.link}>
                       <Info className="hover:text-primary mr-2" />

@@ -38,9 +38,10 @@ const Resume = () => {
           <Badge>SASS</Badge>
           <Badge>Tailwind</Badge>
           <Badge>Redux</Badge>
-          <Badge>Docker</Badge>
+          {/* <Badge>Docker</Badge> */}
           <Badge>Git</Badge>
           <Badge>Prisma</Badge>
+          <Badge>Drizzle</Badge>
           <Badge>MongoDB</Badge>
         </div>
       </div>

@@ -1,13 +1,31 @@
 export const data = [
+  // {
+  //   id: 8,
+  //   image: "/images/armory.png",
+  //   link: "/grid_wallet",
+  //   title: "Grid Wallet",
+  //   github: "https://github.com/igbanibo-Dengi/grid_bank_app",
+  //   demo: "https://gridwallet.vercel.app/",
+  //   icons: ["Next.js", "MongoDB", "Clerk", "ShadCN UI"],
+  //   description: "Next.js, server actions, Appwrite, Plaid, Dwolla .",
+  //   details:
+  //     "  -Armory is a platform for CODM playees to share and find gunsmith builds for their loadouts\n" +
+  //     "  - Built with Next.js server actions, MongoDB, ShadCN UI and Clerk for authentication\n" +
+  //     "  - Sign in details:\n" +
+  //     "    - Username: guest\n" +
+  //     "    - Password: teeketly",
+  // },
   {
     id: 8,
-    image: "/images/armory.png",
-    link: "/grid_wallet",
-    title: "Grid Wallet",
-    github: "https://github.com/igbanibo-Dengi/grid_bank_app",
-    demo: "https://gridwallet.vercel.app/",
-    icons: ["Next.js", "MongoDB", "Clerk", "ShadCN UI"],
-    description: "Next.js, server actions, Appwrite, Plaid, Dwolla .",
+    image: "/images/knight/home.png",
+    link: "/knight-domicile",
+    title: "Knight Domicile",
+    github: "https://github.com/igbanibo-Dengi/Knight-Domicile",
+    demo: "https://knight-domicile.vercel.app/",
+    icons: ["Next.js", "Neon DB", "Drizzle ORM", "Auth.js", "ShadCN UI"],
+    description: [
+      "Next.js, Typescript, Neon DB, Drizzle ORM, Auth.js, ShadCN UI",
+    ],
     details:
       "  -Armory is a platform for CODM playees to share and find gunsmith builds for their loadouts\n" +
       "  - Built with Next.js server actions, MongoDB, ShadCN UI and Clerk for authentication\n" +
@@ -23,8 +41,7 @@ export const data = [
     github: "https://github.com/igbanibo-Dengi/the-armory",
     demo: "https://the-armory.vercel.app/",
     icons: ["Next.js", "MongoDB", "Clerk", "ShadCN UI"],
-    description:
-      "Next.js server actions,Clerk for authentication, and MongoDB .",
+    description: "Next.js, Typescript, Clerk for authentication, and MongoDB .",
     details:
       "  -Armory is a platform for CODM playees to share and find gunsmith builds for their loadouts\n" +
       "  - Built with Next.js server actions, MongoDB, ShadCN UI and Clerk for authentication\n" +
@@ -40,7 +57,7 @@ export const data = [
     github: "https://github.com/igbanibo-Dengi/ticketlee",
     demo: "https://ticketlee.vercel.app/",
     icons: ["Next.js", "MongoDB", "Clerk", "Stripe"],
-    description: "Next.js, Clerk, MongoDB and Stripe .",
+    description: "Next.js, Typescript, Clerk, MongoDB and Stripe .",
     details:
       "  -Ticketlee is a Fullstack project for creating and selling event tickets\n" +
       "  - Built with Next.js server actions, MongoDB, and Clerk for authentication\n" +
