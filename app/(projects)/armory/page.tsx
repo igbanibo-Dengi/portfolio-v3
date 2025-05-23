@@ -92,12 +92,12 @@ export default function StickyScrollRevealDemo() {
             <div className="xl:hidden">
                 <div className="gap-5 items-center mb-2 flex justify-center">
                     <Link
-                        href="https://github.com/igbanibo-Dengi/grid_bank_app"
+                        href='https://github.com/igbanibo-Dengi/the-armory'
                         target="_blank"
                     >
                         <Github className="hover:text-primary" />
                     </Link>
-                    <Link href="https://gridwallet.vercel.app/" target="_blank">
+                    <Link href='https://the-armory.vercel.app/' target="_blank">
                         <ExternalLink className="hover:text-primary" />
                     </Link>
                 </div>

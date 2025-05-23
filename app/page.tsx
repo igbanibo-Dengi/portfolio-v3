@@ -112,7 +112,7 @@ export default function Home() {
             <TabsContent value="home">
               <div className="flex flex-col justify-center items-end h-full">
                 <div className="flex justify-end lg:justify-between w-full max-w-[800px] overflow-hidden pl-20">
-                  <span className="w-[380px] hidden mx-auto xl:mx-0 h-fit my-auto sm:block text-sm sm:text-base md:text-lg">
+                  <span className="w-[380px] hidden mx-auto xl:mx-0 h-fit my-auto sm:block text-sm sm:text-base 2xl:text-lg">
                     <p>Hi, I&apos;m Igbanibo Alex, a front-end web developer specializing in React and TypeScript. I build responsive, scalable designs that focus on user experience.</p>
                     <br />
                     <p className="indent-10">My approach combines creativity with technical expertise to create functional, engaging experiences. If you&apos;re interested in seeing more, take a look at my portfolio—let&apos;s build something great together!</p>

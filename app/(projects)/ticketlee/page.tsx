@@ -156,12 +156,12 @@ const TicketleePage = () => {
             <div className="xl:hidden">
                 <div className="gap-5 items-center mb-2 flex justify-center">
                     <Link
-                        href="https://github.com/igbanibo-Dengi/grid_bank_app"
+                        href='https://github.com/igbanibo-Dengi/events_app'
                         target="_blank"
                     >
                         <Github className="hover:text-primary" />
                     </Link>
-                    <Link href="https://gridwallet.vercel.app/" target="_blank">
+                    <Link href='https://ticketlee.vercel.app/' target="_blank">
                         <ExternalLink className="hover:text-primary" />
                     </Link>
                 </div>
