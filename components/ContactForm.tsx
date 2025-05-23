@@ -37,8 +37,7 @@ const formSchema = z.object({
 });
 
 export default function ContactForm() {
-
-  const [isSubmiting, setIsSubmiting] = useState(false)
+  const [isSubmiting, setIsSubmiting] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -52,14 +51,14 @@ export default function ContactForm() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
-    setIsSubmiting(true)
+    setIsSubmiting(true);
 
     emailjs
       .sendForm(
         "service_i9u1zy5",
         "template_5dzpj17",
         "#my-form",
-        "KBMwY4REo2bDCuKMh"
+        "KBMwY4REo2bDCuKMh",
       )
 
       .then((response) => {
@@ -76,7 +75,7 @@ export default function ContactForm() {
           message: "",
         });
 
-        setIsSubmiting(false)
+        setIsSubmiting(false);
       })
 
       .catch((error) => {
@@ -165,11 +164,7 @@ export default function ContactForm() {
           />
 
           <Button type="submit" className="w-full  md:w-28 ml-auto">
-            {isSubmiting ? (
-              <Loader className="animate-spin" />
-            ) : (
-              "Submit"
-            )}
+            {isSubmiting ? <Loader className="animate-spin" /> : "Submit"}
           </Button>
         </form>
       </Form>

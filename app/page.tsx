@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import { useEffect, useState } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ContactForm from "@/components/ContactForm";
 import { ModeToggle } from "@/components/ThemeToggle/ThemeToggle";
@@ -10,12 +10,12 @@ import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import Link from "next/link";
 import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
-import { HoverBorderGradient } from '@/components/hover-border-gradient';
+import { HoverBorderGradient } from "@/components/hover-border-gradient";
 // import Experience from '@/components/Experience';
 
 export default function Home() {
   const searchParams = useSearchParams();
-  const initialTab = searchParams.get('tab') || 'home';
+  const initialTab = searchParams.get("tab") || "home";
   const [defaultTab, setDefaultTab] = useState(initialTab);
 
   useEffect(() => {
@@ -49,7 +49,9 @@ export default function Home() {
                   Igbanibo Alex
                 </h1>
                 <h3 className="whitespace-nowrap">Front End Developer,</h3>
-                <h3 className="whitespace-nowrap text-sm mt-2">River State, Nigeria</h3>
+                <h3 className="whitespace-nowrap text-sm mt-2">
+                  River State, Nigeria
+                </h3>
               </span>
 
               <TabsList>
@@ -113,14 +115,27 @@ export default function Home() {
               <div className="flex flex-col justify-center items-end h-full">
                 <div className="flex justify-end lg:justify-between w-full max-w-[800px] overflow-hidden pl-20">
                   <span className="w-[380px] hidden mx-auto xl:mx-0 h-fit my-auto sm:block text-sm sm:text-base 2xl:text-lg">
-                    <p>Hi, I&apos;m Igbanibo Alex, a front-end web developer specializing in React and TypeScript. I build responsive, scalable designs that focus on user experience.</p>
+                    <p>
+                      Hi, I&apos;m Igbanibo Alex, a front-end web developer
+                      specializing in React and TypeScript. I build responsive,
+                      scalable designs that focus on user experience.
+                    </p>
                     <br />
-                    <p className="indent-10">My approach combines creativity with technical expertise to create functional, engaging experiences. If you&apos;re interested in seeing more, take a look at my portfolio—let&apos;s build something great together!</p>
+                    <p className="indent-10">
+                      My approach combines creativity with technical expertise
+                      to create functional, engaging experiences. If you&apos;re
+                      interested in seeing more, take a look at my
+                      portfolio—let&apos;s build something great together!
+                    </p>
                   </span>
                   <span className="w-[200px] sm:hidden text-sm sm:font-semibold pt-20 max-[400px]:pt-0">
-                    <p>Hi, I&apos;m Igbanibo Dengimo-owei Alex, a front-end web developer focused on React and TypeScript. I love creating responsive and scalable web designs that bring ideas to life.</p>
+                    <p>
+                      Hi, I&apos;m Igbanibo Dengimo-owei Alex, a front-end web
+                      developer focused on React and TypeScript. I love creating
+                      responsive and scalable web designs that bring ideas to
+                      life.
+                    </p>
                   </span>
-
 
                   <div className="hidden sm:flex justify-center gap-2 items-center overflow-hidden z-50">
                     <div className="marquee">
